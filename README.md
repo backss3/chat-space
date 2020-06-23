@@ -12,7 +12,7 @@
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group-name|string|null: false|
+|name|string|null: false|
 
 ### Association
 - has_many :users, though: :groups_users
@@ -24,7 +24,7 @@
 |------|----|-------|
 |email|string|null: false|
 |password|string|null: false|
-|username|string|null: false|
+|name|string|null: false|
 
 ### Association
 - has_many :groups, though: :groups_users
